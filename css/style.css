@@ -7,11 +7,16 @@ header{
     left: 0;
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     border-style: solid;
-    border-color: black;
+    border-color:#cccccc;
     border-width: 2px;
     z-index: 1;
+}
+
+.header-content{
+    width: 960px;
+    margin: auto;
 }
 
 .header-name{
@@ -34,38 +39,50 @@ header{
 
 /* style the actual content of each page */
 
+body {
+    background-image: url("../images/connectwork.png");
+    background-repeat: repeat;
+}
+
 .page-contents{
     clear: both;
    /* position: relative;
     top: 75px;*/
-    height: 500px;
-    /*width: 100%;*/
-    margin: 75px 50px 0 50px;
-    background-color: aqua;
+    /*height: 500px;*/
+    width: 960px;
+    margin: auto;
+    margin-top: 75px;
+    background-color: #ffffff;
     border-style: solid;
-    border-color: black;
-    border-width: 10px;
+    border-color: #dddddd;
+    border-width: 1px;
     box-sizing: border-box;
+    position: relative;
 }
 
 hr{
-    padding: 0 20px 0 20px;
+    width: 920px;
+    margin: auto;
 }
 
 p{
     margin-bottom: 20px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 45px;
     padding: 20px 0 20px 20px;
+    color: #4aaaa5;
+    font-weight: bold;
 }
 
 #profile-pic{
     float: left;
     margin: 0px 10px 20px 20px;
-    width: 15%;
+    width: 300px;
 }
 
 #about-me-text{
@@ -76,10 +93,53 @@ h1{
     line-height: 1.5;
 }
 
-.portfolio-pic{
-    float: left;
+.portfolio-pic-l{
+    position: absolute;
+    width: 300px;
+    padding: 25px;
+    border-color: red;
+    border-style: dashed;
+    border-width: 1px;
 }
 
+.portfolio-pic-r{
+    position: absolute;
+    left: 350px;
+    width: 300px;
+    height: 200;
+    padding: 25px;
+    border-color: blue;
+    border-style: dashed;
+    border-width: 1px;
+}
 
+.portfoliojpg{
+    width: 100%;
+    clear: both;
+}
 
+.portfolio-text{
+    background-color:rgb(74, 170, 165);
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    right: 0;
+    box-sizing: border-box;
+} 
 
+.break{
+    clear: both;
+    width: 900px;
+    height: 230px;
+    padding: 25px;
+    border-color: blue;
+    border-style: dotted;
+    border-width: 2px;
+}
