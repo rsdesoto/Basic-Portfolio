@@ -1,76 +1,32 @@
 
+/********************************************************
+** ELEMENTS *********************************************
+********************************************************/
+
+
 /* header information - this will be used for every page */
 
 header{
     position: fixed;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 85px;
     width: 100%;
     background-color: #ffffff;
     border-style: solid;
     border-color:#cccccc;
-    border-width: 2px;
+    border-width: 1px;
     z-index: 1;
 }
 
-.header-content{
-    width: 960px;
-    margin: auto;
-}
-
-.header-name{
-    float: left;
-    padding-left: 50px;
-}
-
-.header-contact{
-    float: right;
-    padding-right: 50px;
-}
-
-.header-portfolio{
-    float: right;
-}
-
-.header-about{
-    float: right;
-}
-
-/* style the actual content of each page */
+/* set background */
 
 body {
     background-image: url("../images/connectwork.png");
     background-repeat: repeat;
 }
 
-.page-contents{
-    clear: both;
-   /* position: relative;
-    top: 75px;*/
-    /*height: 500px;*/
-    width: 960px;
-    margin: auto;
-    margin-top: 75px;
-    background-color: #ffffff;
-    border-style: solid;
-    border-color: #dddddd;
-    border-width: 1px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-hr{
-    width: 920px;
-    margin: auto;
-}
-
-p{
-    margin-bottom: 20px;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* set headings, fonts, and hr break */
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
@@ -79,27 +35,92 @@ h1{
     font-weight: bold;
 }
 
-#profile-pic{
-    float: left;
-    margin: 0px 10px 20px 20px;
-    width: 300px;
+hr{
+    width: 920px;
+    margin: auto;
 }
 
-#about-me-text{
-    margin: 20px 20px 20px 10px;
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-    /* float: left;
-    width: 75%; */
-    line-height: 1.5;
 }
+
+/********************************************************
+** CLASSES **********************************************
+********************************************************/
+
+
+/* header information */
+
+.header-content{
+    width: 960px;
+    margin: auto;
+    /*height: 100px;*/
+}
+
+.header-name{
+    float: left;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.header-right{
+    float: right;
+    padding-left: 30px;
+    padding-top: 34px;
+}
+
+/* 
+.header-contact{
+    float: right;
+    padding-left: 50px;
+}
+
+.header-portfolio{
+    float: right;
+    padding-left: 50px;
+}
+
+.header-about{
+    float: right;
+    padding-left: 50px;
+} */
+
+/* page content styling */
+
+
+.page-contents{
+    clear: both;
+   /* position: relative;
+    top: 75px;*/
+    /*height: 500px;*/
+    width: 960px;
+    margin: auto;
+    margin-top: 120px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/* all the weird positionings for the portfolio page */
 
 .portfolio-pic-l{
     position: absolute;
     width: 300px;
     padding: 25px;
-    border-color: red;
+    /*border-color: red;
     border-style: dashed;
-    border-width: 1px;
+    border-width: 1px;*/
 }
 
 .portfolio-pic-r{
@@ -108,9 +129,9 @@ h1{
     width: 300px;
     height: 200;
     padding: 25px;
-    border-color: blue;
+    /*border-color: blue;
     border-style: dashed;
-    border-width: 1px;
+    border-width: 1px;*/
 }
 
 .portfoliojpg{
@@ -134,12 +155,42 @@ h1{
     box-sizing: border-box;
 } 
 
+
+/* note RD, 2018/11/1 - this is to force the length of the page so that, despite
+the absolute positioning, each "row" of images shows up properly --> create a 
+dummy block that sits underneath the absolute positioned rows of images so that
+the next row of images starts in the right place 
+
+***** IF YOU CHANGE THE HEIGHT OF THE IMAGE BLOCKS, YOU MUST CHANGE THE 
+HEIGHT OF THIS BREAK BLOCK *********/
+
 .break{
     clear: both;
     width: 900px;
     height: 230px;
     padding: 25px;
-    border-color: blue;
+    /*border-color: blue;
     border-style: dotted;
-    border-width: 2px;
+    border-width: 2px;*/
 }
+
+/********************************************************
+** IDs **************************************************
+********************************************************/
+
+/* about me styling */
+
+#profile-pic{
+    float: left;
+    margin: 0px 10px 20px 20px;
+    width: 300px;
+}
+
+#about-me-text{
+    margin: 20px 20px 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* float: left;
+    width: 75%; */
+    line-height: 1.5;
+}
+
