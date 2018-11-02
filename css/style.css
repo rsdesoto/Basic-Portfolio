@@ -3,6 +3,10 @@
 ** ELEMENTS *********************************************
 ********************************************************/
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 /* header information - this will be used for every page */
 
@@ -35,14 +39,7 @@ h1{
     font-weight: bold;
 }
 
-footer{
-    width: 100%;
-    height: 45px;
-    background-color: RGb(100,100,100);
-    border-top: 4px solid #4aaaa5;
-    position: fixed;
-    bottom: 0;
-}
+
 
 /* note - this is the FOOTER ONLY heading! */
 h6{
@@ -68,13 +65,32 @@ p{
 ** CLASSES **********************************************
 ********************************************************/
 
+/* wrapper information */
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer, .push{
+    height: 50px;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    background-color: RGb(100,100,100);
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
+    bottom: 0;
+}
 
 /* header information */
 
 .header-content{
     width: 960px;
     margin: auto;
-    /*height: 100px;*/
 }
 
 .header-name{
@@ -89,8 +105,6 @@ p{
 
 .header-right{
     float: right;
-    /* padding-left: 30px;
-    padding-top: 34px; */
     margin: 34px 0px 0px 15px;
     padding-right: 15px;
     border-right: 1px solid #d4d4d4;
@@ -98,31 +112,11 @@ p{
 
 .header-right-end{
     float: right;
-    /* padding-left: 30px;
-    padding-top: 34px; */
     margin: 34px 0px 0px 15px;
 }
 
 
-
-/* 
-.header-contact{
-    float: right;
-    padding-left: 50px;
-}
-
-.header-portfolio{
-    float: right;
-    padding-left: 50px;
-}
-
-.header-about{
-    float: right;
-    padding-left: 50px;
-} */
-
 /* page content styling */
-
 
 .page-contents{
     clear: both;
@@ -135,7 +129,7 @@ p{
     border-width: 1px;
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -145,9 +139,7 @@ p{
     position: absolute;
     width: 300px;
     padding: 25px;
-    /*border-color: red;
-    border-style: dashed;
-    border-width: 1px;*/
+
 }
 
 .portfolio-pic-r{
@@ -156,9 +148,7 @@ p{
     width: 300px;
     height: 200;
     padding: 25px;
-    /*border-color: blue;
-    border-style: dashed;
-    border-width: 1px;*/
+
 }
 
 .portfoliojpg{
@@ -196,9 +186,7 @@ HEIGHT OF THIS BREAK BLOCK *********/
     width: 900px;
     height: 230px;
     padding: 25px;
-    /*border-color: blue;
-    border-style: dotted;
-    border-width: 2px;*/
+
 }
 
 /********************************************************
@@ -216,8 +204,6 @@ HEIGHT OF THIS BREAK BLOCK *********/
 #about-me-text{
     margin: 20px 20px 20px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    /* float: left;
-    width: 75%; */
     line-height: 1.5;
 }
 
