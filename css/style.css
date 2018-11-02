@@ -72,9 +72,21 @@ p{
 
 .header-right{
     float: right;
-    padding-left: 30px;
-    padding-top: 34px;
+    /* padding-left: 30px;
+    padding-top: 34px; */
+    margin: 34px 0px 0px 15px;
+    padding-right: 15px;
+    border-right: 1px solid #d4d4d4;
 }
+
+.header-right-end{
+    float: right;
+    /* padding-left: 30px;
+    padding-top: 34px; */
+    margin: 34px 0px 0px 15px;
+}
+
+
 
 /* 
 .header-contact{
