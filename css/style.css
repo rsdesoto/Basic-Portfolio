@@ -62,6 +62,7 @@ textarea{
     background-color: #ffffff;
     color: grey;
     height: 200px;
+    font-size: 14px;
 }
 
 /* for the message page only - we want a much smaller margin for the form only */
@@ -152,6 +153,7 @@ input[type=text] {
     width: 920px;
     background-color: #ffffff;
     color: grey;
+    font-size: 14px;
 }
 
 
