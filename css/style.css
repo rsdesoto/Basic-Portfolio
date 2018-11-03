@@ -60,7 +60,7 @@ p{
 textarea{
     width: 920px;
     background-color: #ffffff;
-    color: grey;
+    color: #777777;
     height: 200px;
     font-size: 14px;
 }
@@ -69,6 +69,7 @@ textarea{
 form > p {
     margin-bottom: 5px;
 }
+
 
 
 /********************************************************
@@ -111,15 +112,30 @@ form > p {
 
 .header-right{
     float: right;
-    margin: 34px 0px 0px 15px;
-    padding-right: 15px;
+    margin-top: 29px;
+    padding: 5px 15px 5px 15px;
     border-right: 1px solid #d4d4d4;
+}
+
+.header-right:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    transition: .8s ease;
 }
 
 .header-right-end{
     float: right;
-    margin: 34px 0px 0px 15px;
+    margin-top: 29px;
+    padding: 5px 0px 5px 15px;
 }
+
+.header-right-end:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    
+    transition: .8s ease;
+}
+
 
 
 
@@ -142,6 +158,8 @@ form > p {
 }
 
 
+
+
 /* form styling */
 
 .form-wrap{
@@ -155,6 +173,26 @@ input[type=text] {
     color: grey;
     font-size: 14px;
 }
+
+.input-text:active, .input-text:focus{
+    background-color: rgb(252, 242, 198);
+}
+
+
+.button-submit{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    width: 100px;
+}
+
+.button-submit:hover {
+    background-color: #174745;
+    transition: .5s ease;
+}
+
 
 
 /* all the weird positionings for the portfolio page */
@@ -193,6 +231,22 @@ input[type=text] {
     right: 0;
     box-sizing: border-box;
 } 
+
+.portfolio-pic-l:hover {
+    outline: 10px solid rgb(34, 34, 34);
+    outline-offset: -15px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .8s ease;
+}
+
+.portfolio-pic-r:hover {
+    outline: 10px solid rgb(34, 34, 34);
+    outline-offset: -15px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .8s ease;
+}
 
 
 /* note RD, 2018/11/1 - this is to force the length of the page so that, despite
